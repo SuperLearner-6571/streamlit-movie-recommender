@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 import requests
+import os
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -28,8 +29,10 @@ st.markdown("<h4 style='text-align: center; color: black;'>Find a similar movie 
 st.markdown("<h4 style='text-align: center; color: black;'>Web App created by Abhisht Gupta</h4>", unsafe_allow_html=True)
 
 
-movies = pickle.load(open('app/streamlit-movie-recommender/movies.pkl','rb'))
-similarity = pickle.load(open('app/streamlit-movie-recommender/similarity.pkl','rb'))
+path = os.path.dirname(__file__)
+print(path)
+movies = pickle.load(open(path+'/movies.pkl','rb'))
+similarity = pickle.load(open(path+'/similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
