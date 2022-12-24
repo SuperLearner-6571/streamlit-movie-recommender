@@ -119,39 +119,3 @@ wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.2
 ```
-
-Clone this repository or Download the files into your local system. 
-
-- Extract the ZIP file (if you directly download from Github Web)
-- Download the similarity model file from [here 🔗](https://drive.google.com/file/d/1aF6TthiM_ZpVjcWAnbXg7OJAl0oAkXs1/view?usp=sharing)
-- Make sure all the files are in the same folder/directory
-- Open your Command Prompt (CMD) in the same directory 
-- Type the following command (for web app) : 
-
-```bash
-streamlit run app.py
-```
-
-- Make sure you have streamlit installed on your local device, if not installed, type the following to install (windows) : 
-
-```bash
-pip install streamlit 
-```
-
-## Working Demo 
-
-The demo working of this web app can be found [here 🔗](https://youtu.be/z4QQQ2U3NxU) | Do like it, if you watch it :) 
-
-## 🚀 Thanks
-
-Thanks for looking into the project and being here. Feel free to share your reviews/suggestions/remarks! :) 
-
-**If you found it useful, leave a ⭐ here!**
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-Ending Credits 
-- Made using Python and Streamlit
-- @Author : [Sagar Bapodara](https://www.linkedin.com/in/sagar-bapodara/)
