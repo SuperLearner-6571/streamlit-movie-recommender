@@ -28,8 +28,8 @@ st.markdown("<h4 style='text-align: center; color: black;'>Find a similar movie 
 st.markdown("<h4 style='text-align: center; color: black;'>Web App created by Abhisht Gupta</h4>", unsafe_allow_html=True)
 
 
-movies = pickle.load(open('streamlit-movie-recommender/movies.pkl','rb'))
-similarity = pickle.load(open('streamlit-movie-recommender/similarity.pkl','rb'))
+movies = pickle.load(open('app/streamlit-movie-recommender/movies.pkl','rb'))
+similarity = pickle.load(open('app/streamlit-movie-recommender/similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
@@ -59,4 +59,4 @@ if st.button('Show Recommendation'):
         st.image(recommended_movie_posters[4])
 
 st.title(" ")
-# st.write("The code for this recommender system is available [here](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
+# st.write("The code for this recommender system is available")
